@@ -291,8 +291,13 @@ vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Go to right window", remap = tr
 -- Delete buffer
 vim.keymap.set("n", "<leader>bd", "<cmd>bd<cr>", { desc = "Go to right window", remap = true })
 
+-- Better indenting in visual mode
 vim.keymap.set("v", "<", "<gv")
 vim.keymap.set("v", ">", ">gv")
+
+-- Better C-d and C-u motions
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
