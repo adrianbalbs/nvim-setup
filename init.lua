@@ -153,14 +153,22 @@ require('lazy').setup({
     -- Set lualine as statusline
     'nvim-lualine/lualine.nvim',
     -- See `:help lualine.txt`
-    enabled = false,
+    enabled = true,
     opts = {
       options = {
-        icons_enabled = false,
+        icons_enabled = true,
         theme = 'tokyonight',
         component_separators = '|',
         section_separators = '',
       },
+      sections = {
+        lualine_a = { 'mode' },
+        lualine_b = { 'branch' },
+        lualine_c = { 'filename' },
+        lualine_x = { 'encoding', 'filetype' },
+        lualine_y = { 'progress' },
+        lualine_z = { 'location' }
+      }
     },
   },
 
