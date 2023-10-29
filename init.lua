@@ -236,6 +236,7 @@ require('lazy').setup({
 
 -- Set highlight on search
 vim.o.hlsearch = false
+vim.opt.incsearch = true
 
 -- Make line numbers default
 vim.wo.number = true
@@ -271,6 +272,17 @@ vim.o.completeopt = 'menuone,noselect'
 
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
+
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+
+vim.opt.smartindent = true
+
+vim.opt.wrap = false
+
+vim.opt.colorcolumn = "120"
 
 -- [[ Basic Keymaps ]]
 
