@@ -160,6 +160,7 @@ require('lazy').setup({
         icons_enabled = true,
         theme = 'tokyonight',
         disabled_filetypes = { "neo-tree" },
+        globalstatus = true,
         component_separators = '|',
         section_separators = '',
       },
