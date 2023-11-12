@@ -7,8 +7,8 @@ return {
     transparent = true,
     style = "moon",
     styles = {
-      sidebars = 'transparent',
-      floats = 'transparent'
+      -- sidebars = 'transparent',
+      -- floats = 'transparent'
     }
   },
 }
