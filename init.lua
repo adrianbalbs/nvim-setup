@@ -322,6 +322,14 @@ vim.keymap.set("v", ">", ">gv")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
+-- ToggleTerm keymaps
+vim.keymap.set('t', '<esc>', [[<C-\><C-n>]], { desc = "Go back to normal mode from terminal mode", remap = true })
+vim.keymap.set('t', '<C-h>', [[<Cmd>wincmd h<CR>]], { desc = "Go to left window", remap = true })
+vim.keymap.set('t', '<C-j>', [[<Cmd>wincmd j<CR>]], { desc = "Go to upper window", remap = true } )
+vim.keymap.set('t', '<C-k>', [[<Cmd>wincmd k<CR>]], { desc = "Go to lower window", remap = true } )
+vim.keymap.set('t', '<C-l>', [[<Cmd>wincmd l<CR>]], { desc = "Go to right window", remap = true })
+vim.keymap.set('t', '<C-w>', [[<C-\><C-n><C-w>]], { desc = "Terminal options", remap = true })
+
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
